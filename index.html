@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylhet Tourist Spot 
+      | সিলেট ভ্রমণ
+    </title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans+Bengali:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style='font-family: "Poppins", serif;'>
+  <section>
+    <div class="navbar bg-white">
+      <div class="navbar-first justify-around items-center mx-auto flex-row-reverse lg:">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost ml-10 lg:hidden">
+            <label class="btn btn-circle bg-white swap swap-rotate">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+            
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myNav()"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myClose()"
+                viewBox="0 0 512 512">
+                <polygon
+               points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content -ml-16 bg-white rounded-none z-[1] mt-3 w-52 p-2 shadow" id="mNav">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Tourist Places</a>
+              <ul class="p-2 rounded-none">
+                  <li><a href="sreemangal.html"> Sreemangal</a></li>
+                  <li><a href="jaflong.html"> Jaflong</a></li>
+                  <li><a href="lalakhal.html">Lalakhal</a></li>
+                  <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                  <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                  <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                  <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                  <li><a href="park.html">Khadimnagar National Park</a></li>
+                  <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                  <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+                </ul>
+            </li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="food.html">Food Court</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl hidden lg:block"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+        <a class="btn btn-ghost text-xl -ml-12 block lg:hidden"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+      </div>
+      <div class="navbar-center justify-around items-center ml-44 hidden lg:flex ">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home<i class="las la-angle-right"></i></a></li>
+          <li>
+            <details>
+              <summary>Tourist Places</summary>
+              <ul class="p-2 rounded-none">
+                <li><a href="sreemangal.html"> Sreemangal</a></li>
+                <li><a href="jaflong.html"> Jaflong</a></li>
+                <li><a href="lalakhal.html">Lalakhal</a></li>
+                <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                <li><a href="park.html">Khadimnagar National Park</a></li>
+                <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="hotels.html">Hotels<i class="las la-angle-right"></i></a></li>
+          <li><a href="resorts.html">Resorts<i class="las la-angle-right"></i></a></li>
+          <li><a href="restaurants.html">Restaurants<i class="las la-angle-right"></i></a></li>
+          <li><a href="food.html">Food Court<i class="las la-angle-right"></i></a></li>
+          <li><a href="blog.html">Blog<i class="las la-angle-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end mr-40 hidden lg:block">
+        <div class="navbar bg-white">
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="assest/image/avatar.jpeg" />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="hero min-h-[600px]"
+  style="background-image: url('assest/image/home.jpg'); background-size:cover;">
+  <div class="hero-overlay bg-opacity-50"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-xl text-white font-bold lg:text-4xl">Sylhet Tourist Spot
+    </h1>
+      <p class="mb-5 text-white">
+        Restaurants, Resorts & Hotels in Sylhet
+
+      </p>
+      <a class="btn bg-[#5B913B] text-[#131010] border-none text-xl hover:bg-[#77B254]">Book Hotel in Sylhet
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+<div class="hero bg-white mt-10 min-h-[600px] lg:mt0">
+    <div class="hero-content flex-col-reverse text-left lg:flex-row">
+      <div class="w-full lg:w-1/3 min-h-[400px]">
+        <div class="w-full mb-5 flex-row justify-around items-center m-auto">
+          <button class="btn bg-[#5B913B] text-[#131010] text-xl shadow-xl hover:bg-[#77B254]" onclick="myBangla()" style="font-family: 'Noto Sans Bengali',serif;">
+            <i class="las la-adjust text-2xl"></i> বাংলা
+          </button>
+          <button class="btn bg-[#5B913B] text-[#131010] text-xl shadow-xl hover:bg-[#77B254]" onclick="myEnglish()">
+            <i class="las la-adjust text-2xl"></i> English
+          </button>
+        </div>
+       <div class=" bg-white w-80 min-h-[400px] lg:w-full" id="engId">
+        <h3 class="text-2xl font-bold">
+          Visit the best tourist places in Sylhet
+        </h3>
+        <div class="overflow-y-scroll min-h-[400px]">
+          <p class="text-xl">
+            Sylhet tour is now easier than ever with the guides provided on this website. Beautiful 
+            Sylhet City is located in north- eastern Bangladesh on the bank of River Surma.
+         <br>
+            Travellers can easily reach Sylhet by Air, Train or Bus, departing daily several times from and to Dhaka, as well as Chittagong.We provide tourist information to help one plan their perfect vacation in Sylhet, from maps/directions to recommending 
+            delicious restaurants and finding one perfect accommodations in Sylhet.
+          </p>
+        </div>
+       </div>
+       <div class="hidden  bg-white w-80 min-h-[400px] lg:w-full" id="banId">
+        <h3 class="text-2xl font-bold" style="font-family: 'Noto Sans Bengali',serif;">
+          সিলেট ভ্রমণ
+        </h3>
+        <p class="text-xl" style="font-family: 'Noto Sans Bengali',serif;">
+          এই ওয়েবসাইটে দেওয়া গাইডের সাহায্যে সিলেট ভ্রমণ এখন আগের চেয়ে সহজ। 
+          বাংলাদেশের উত্তর-পূর্বাঞ্চলে সুরমা নদীর তীরে সুন্দর এই শহর অবস্থিত।
+          যাত্রীরা সহজে বিমান, ট্রেন বা বাসে সিলেটে পৌঁছাতে পারে, প্রতিদিন কয়েকবার ঢাকা থেকে 
+          এবং চট্টগ্রাম থেকে যানবাহন এখানে আসে।
+          </p>
+          <br>
+        <p class="text-xl" style="font-family: 'Noto Sans Bengali',serif;">
+          ভ্রমণ মানচিত্র থেকে শুরু করে সুস্বাদু রেস্তোরাঁ,নিখুঁত একটি থাকার জায়গা খোঁজা,এবং সিলেটে 
+          একটি নিখুঁত ছুটির পরিকল্পনা করতে এই ওয়েবসাইটে পর্যটকদের তথ্য সরবরাহ করি।
+        </p>
+       </div>
+      </div>
+      <div class="w-80 lg:w-2/3 ">
+        <div class="carousel w-full min-h-[250px] lg:min-h-[400px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="assest/image/slide3.jpg"
+              class="w-full lg:h-[400px]" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" class="btn btn-circle  text-xl lg:text-2xl">❮</a>
+              <a href="#slide2" class="btn btn-circle  text-xl lg:text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="assest/image/slide2.jpg"
+              class="w-full lg:h-[400px]" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle  text-xl lg:text-2xl">❮</a>
+              <a href="#slide3" class="btn btn-circle  text-xl lg:text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="assest/image/slide4.jpg"
+              class="w-full lg:h-[400px]" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle  text-xl lg:text-2xl">❮</a>
+              <a href="#slide4" class="btn btn-circle  text-xl lg:text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="assest/image/tower-building-the-palace.jpg"
+              class="w-full lg:h-[400px]" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle text-xl lg:text-2xl">❮</a>
+              <a href="#slide1" class="btn btn-circle  text-xl lg:text-2xl">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <br>
+  <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+    <div class="border-b mb-5 flex justify-between text-sm">
+        <div class="text-black flex items-center pb-2 pr-2 border-b-2 border-black uppercase">
+          <i class="las la-globe-asia  mr-3 text-4xl" id="Capa-1"></i>
+         
+            <a href="#" class="text-2xl   font-bold  text-center inline-block">Places to visit in Sylhet</a>
+        </div>
+        <a href="#">See All</a>
+    </div>
+
+
+    <div class="grid mb-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+        <!-- CARD 1 -->
+        <div class="rounded overflow-hidden shadow-lg flex flex-col">
+          <a href="#"></a>
+          <div class="relative"><a href="#">
+            <img class="w-full"
+            src="assest/image/Shapla-Bill-Sylhet-Dibir-Haor-1.jpg"
+           alt="shapla-bill"/>
+                  <div
+                      class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                  </div>
+              </a><a href="#!">
+                 
+              </a>
+          </div>
+          <div class="px-6 py-4 mb-auto">
+            <h2 class="card-title"><a href="shapla-bill.html" class="text-[#77B254]">Shapla Bill Sylhet – শাপলা বিল জৈন্তাপুর</a></h2>
+          </div>
+          <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+            <a href="shapla-bill.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+          </div>
+      </div>
+
+
+        <!-- CARD 2 -->
+        <div class="rounded overflow-hidden shadow-lg flex flex-col">
+          <a href="#"></a>
+          <div class="relative"><a href="#">
+            <img class="w-full"
+            src="assest/image/Madhabkunda-waterfall.jpg"
+            alt="Madhabkunda Waterfall"/>
+                  <div
+                      class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                  </div>
+              </a><a href="#!">
+                 
+              </a>
+          </div>
+          <div class="px-6 py-4 mb-auto">
+            <h2 class="card-title"><a href="madhabkunda-waterfall.html" class="text-[#77B254]">Madhabkunda Waterfall – মাধবকুন্ড</a></h2>
+          </div>
+          <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+             <a href="madhabkunda-waterfall.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+          </div>
+      </div>
+
+
+        
+        <!-- CARD 3 -->
+        <div class="rounded overflow-hidden shadow-lg flex flex-col">
+          <a href="#"></a>
+          <div class="relative"><a href="#">
+            <img class="w-full"
+            src="assest/image/tea-g.jpg"
+            alt="Tea Gardens – চা বাগান"/>
+                  <div
+                      class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                  </div>
+              </a><a href="#!">
+                 
+              </a>
+          </div>
+          <div class="px-6 py-4 mb-auto">
+            <h2 class="card-title h-14"><a href="tea-gardens.html" class="text-[#77B254]">Tea Gardens – চা বাগান</a></h2>
+          </div>
+          <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+            <a href="tea-gardens.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+          </div>
+      </div>
+
+    </div>
+   
+    <div class="grid mb-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+      <!-- CARD 1 -->
+      <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/sreemangol.jpeg"
+          alt="Sreemangal – শ্রীমঙ্গল" />
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title h-14"><a href="sreemangal.html" class="text-[#77B254]">Sreemangal – শ্রীমঙ্গল</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+          <a href="sreemangal.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+        </div>
+    </div>
+
+
+      <!-- CARD 2 -->
+      <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/Bholaganj SadaPathor – সাদাপাথর.jpeg"
+           alt="Bholaganj SadaPathor – সাদাপাথর"/>
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title h-14"><a href="bholaganj-sada-pathor.html" class="text-[#77B254]">Bholaganj SadaPathor – সাদাপাথর</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+           <a href="bholaganj-sada-pathor.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+        </div>
+    </div>
+
+
+      
+      <!-- CARD 3 -->
+      <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/Ratargul Swamp Forest – রাতারগুল.jpeg"
+           alt="Ratargul Swamp Forest – রাতারগুল"/>
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title"><a href="ratargul.html" class="text-[#77B254]">
+            Ratargul Swamp Forest – রাতারগুল</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+          <a href="ratargul.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="grid mb-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <!-- CARD 1 -->
+    <div class="rounded overflow-hidden shadow-lg flex flex-col">
+      <a href="#"></a>
+      <div class="relative"><a href="#">
+        <img class="w-full"
+        src="assest/image/Lalakhal – লালাখাল.jpeg"
+        alt="Lalakhal – লালাখাল"  />
+              <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+              </div>
+          </a><a href="#!">
+             
+          </a>
+      </div>
+      <div class="px-6 py-4 mb-auto">
+        <h2 class="card-title"><a href="lalakhal.html" class="text-[#77B254]">Lalakhal – লালাখাল</a></h2>
+      </div>
+      <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+        <a href="lalakhal.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+      </div>
+  </div>
+    <!-- CARD 2 -->
+    <div class="rounded overflow-hidden shadow-lg flex flex-col">
+      <a href="#"></a>
+      <div class="relative"><a href="#">
+        <img class="w-full"
+        src="assest/image/Khadimnagar National Park.jpeg"
+        alt="
+        Khadimnagar National Park – খাদিমনগর জাতীয় উদ্যান" />
+              <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+              </div>
+          </a><a href="#!">
+             
+          </a>
+      </div>
+      <div class="px-6 py-4 mb-auto">
+        <h2 class="card-title h-14"><a href="khadimnagar.html" class="text-[#77B254]"> Khadimnagar National Park – খাদিমনগর জাতীয় উদ্যান</a></h2>
+      </div>
+      <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+         <a href="khadimnagar.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+      </div>
+  </div> 
+    <!-- CARD 3 -->
+    <div class="rounded overflow-hidden shadow-lg flex flex-col">
+      <a href="#"></a>
+      <div class="relative"><a href="#">
+        <img class="w-full"
+        src="assest/image/Jaflong – জাফলং.jpeg"
+           alt="
+           Jaflong – জাফলং"/>
+              <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+              </div>
+          </a><a href="#!">
+             
+          </a>
+      </div>
+      <div class="px-6 py-4 mb-auto">
+        <h2 class="card-title"><a href="jaflong.html" class="text-[#77B254]">
+          Jaflong – জাফলং</a></h2>
+      </div>
+      <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+        <a href="jaflong.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+      </div>
+  </div>
+
+</div>
+<br>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+  <!-- CARD 1 -->
+  <div class="rounded overflow-hidden shadow-lg flex flex-col">
+    <a href="#"></a>
+    <div class="relative"><a href="#">
+      <img class="w-full"
+      src="assest/image/Bisnakandi.jpeg"
+           alt="
+           Bisnakandi – বিছনাকান্দি" />
+            <div
+                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+            </div>
+        </a><a href="#!">
+           
+        </a>
+    </div>
+    <div class="px-6 py-4 mb-auto">
+      <h2 class="card-title"><a href="bisnakandi.html" class="text-[#77B254]"> Bisnakandi – বিছনাকান্দি</a></h2>
+    </div>
+    <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+      <a href="bisnakandi.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+    </div>
+</div>
+  <!-- CARD 2 -->
+  <div class="rounded overflow-hidden shadow-lg flex flex-col">
+    <a href="#"></a>
+    <div class="relative"><a href="#">
+      <img class="w-full"
+      src="assest/image/Sylhet City – সিলেট শহর.jpeg"
+      alt="Sylhet City – সিলেট শহর"/>
+            <div
+                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+            </div>
+        </a><a href="#!">
+           
+        </a>
+    </div>
+    <div class="px-6 py-4 mb-auto">
+      <h2 class="card-title h-14"><a href="sylhet-city.html" class="text-[#77B254]">Sylhet City – সিলেট শহর</a></h2>
+    </div>
+    <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+       <a href="sylhet-city.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+    </div>
+</div>
+
+  <!-- CARD 3 -->
+  <div class="rounded overflow-hidden shadow-lg flex flex-col">
+    <a href="#"></a>
+    <div class="relative"><a href="#">
+      <img class="w-full"
+      src="assest/image/lawachara.jpeg"
+           alt="Lawachara National Park- লাউয়াছড়া জাতীয় উদ্যান"/>
+            <div
+                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+            </div>
+        </a><a href="#!">
+           
+        </a>
+    </div>
+    <div class="px-6 py-4 mb-auto">
+      <h2 class="card-title"><a href="lawachara.html" class="text-[#77B254]">
+        Lawachara National Park- লাউয়াছড়া জাতীয় উদ্যান</a></h2>
+    </div>
+    <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+      <a href="lawachara.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+    </div>
+</div>
+</div>
+</div>
+<section>
+  <div
+  class="hero min-h-[300px]"
+  style="background-image: url('assest/image/Sylhet\,_by_Murshed.jpg');background-size:cover;">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <p class="mb-5 text-4xl font-extrabold text-white">
+        Sylhet <br>
+        Holiday <br>
+        Destination
+      </p>
+      <h3 class="text-3xl text-white mb-3">Book Hotel Online to</h3>
+      <button class="btn bg-[#5B913B] text-[#131010] border-none p-4 h-14 text-xl hover:bg-[#77B254]">Click here</button>
+    </div>
+  </div>
+</div>
+</section>
+<main class="w-full lg:w-[1280px] m-auto">
+  <div class="hero">
+    <div class="hero-content flex-col mb-5 mt-5 lg:flex-row">
+      <div class="card card-compact rounded-none bg-white w-80 h-64 shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title"><img
+            src="assest/image/icon-around.png"
+            alt="Rainforest Hike" class="w-[50px] justify-start" /> <strong class="text-[#77B254]">Rainforest Hike</strong> </h2>
+          <p>Explore rainforest visiting Khadimnagar 
+            National Park near Sylhet City and Lawachara 
+            National Park in Sreemangal.</p>
+          <div class="card-actions justify-end">
+            <button class="btn bg-[#5B913B] text-[#131010]">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact rounded-none bg-white w-80 h-64 shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title"><img
+            src="assest/image/icon-boat.png"
+            alt="Rainforest Hike" class="w-[50px] justify-start" /> <strong class="text-[#77B254]">Waterfall & River</strong> </h2>
+          <p>Find beautiful waterfall in Jaflong and Madhabkunda. 
+            Experience awesome boat ride in
+             Piyain River, Jaflong and Shari River’s aquamarine water in Lalakhal.</p>
+          <div class="card-actions justify-end">
+            <button class="btn bg-[#5B913B] text-[#131010]">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact rounded-none bg-white w-80 h-64 shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title"><img
+            src="assest/image/icon-landmark.png"
+            alt="Rainforest Hike" class="w-[50px] justify-start" /> <strong class="text-[#77B254]">Green Tea Garden</strong> </h2>
+          <p>For Green lovers! Visit Tea Gardens ... 
+            Miles after miles, all you see green trees.
+             Closest gardens are on the Airport road and Khadimnagar.</p>
+          <div class="card-actions justify-end">
+            <button class="btn bg-[#5B913B] text-[#131010]">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div>
+  <div
+  class="hero min-h-[200px]"
+  style="background-image: url('assest/image/the-palace-luxury-resort.jpg'); background-size: cover;">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-left">
+    <div class="max-w-screen-md">
+      <h1 class="mb-5 text-5xl text-white font-bold">Sylhet</h1>
+      <p class="mb-5 text-white text-xl">
+        <strong class="text-xl text-[#77B254] font-bold">Sylhet Division</strong> is the northeast division of Bangladesh. It borders the Indian states of Meghalaya, Assam and Tripura to the north, east and south respectively, and with the Bangladeshi 
+        divisions of Chittagong to the southwest and Dhaka and Mymensingh to the west.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<main class="w-full mt-10 mb-10 lg:w-[1280px] m-auto">
+  <div
+  class="hero min-h-[500px]bg-white">
+  <div class="hero-content mt-5 mb-5"></div>
+  <div class="hero-content text-neutral-content text-left">
+    <div class="max-w-screen-md">
+      <div class="w-full mb-5 flex-row justify-around items-center m-auto">
+        <button class="btn bg-[#5B913B] text-[#131010] text-xl shadow-xl hover:bg-[#77B254]" style="font-family: 'Noto Sans Bengali',serif;" onclick="myBng()">
+          <i class="las la-adjust text-2xl"></i> বাংলা
+        </button>
+        <button class="btn bg-[#5B913B] text-[#131010] text-xl shadow-xl hover:bg-[#77B254]" onclick="myEng()">
+          <i class="las la-adjust text-2xl"></i> English
+        </button>
+      </div>
+      <div class="">
+        <p class="mb-2.5 text-xl text-black" id="EngId" >
+          Many tourist places and visiting places can be found in and around Sylhet City. A visit to Sylhet would not be complete without seeing tropical forests and tea gardens, many of which can be visited as a day tour, surround the city. Tourist attractions outside the city include Ratargul Swamp Forest, Bisnakandi, Bholaganj SadaPathor, Jaflong, Lalakhal,  Khadimnagar Rain Forest, Sreemangal and many more! Activities include hiking, boat trips, camping, local cooking and visiting local tribes.
+        </p>
+      </div>
+      <div class="">
+        <p class="mb-2.5 text-xl hidden text-black" id="BanId" style='font-family: "Noto Sans Bengali", serif;'>
+          সিলেট শহর ও এর আশেপাশে অনেক পর্যটন স্থান এবং দর্শনীয় স্থান রয়েছে । সিলেট ভ্রমণ ক্রান্তীয় বনাঞ্চলএবং চা বাগান না দেখে
+          সম্পূর্ণ হবে না, যার মধ্যে অনেকগুলি শহরের আশেপাশে এক দিনের সফর হিসাবে পরিদর্শন করা যেতে পারে। শহরের বাইরের
+          পর্যটক আকর্ষণের মধ্যে রয়েছে রাতারগুল সোয়াম্প ফরেস্ট, বিছনাকান্দি, ভোলাগঞ্জ সাদাপাথর, জাফলং, লালাখাল, খাদিমনগর রেইন ফরেস্ট, শ্রীমঙ্গল এবং আরও অনেক কিছু! ক্রিয়াকলাপগুলির মধ্যে রয়েছে হাইকিং, নৌকা ভ্রমণ, ক্যাম্পিং, স্থানীয় রান্না এবং স্থানীয় উপজাতিদের পরিদর্শন।
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</main>
+<hr>
+<section class="w-full mt-10 lg:w-[1280px] m-auto">
+ <div class="hero h-[1000px] lg:h-96 mt-12">
+  <div class="hero-content -mt-36 flex-col lg:flex-row">
+   <div class="w-80 mb-10 lg:w-1/2">
+    <div class="h-[400px] lg:h-64">
+    <div class="card card-side rounded-none bg-white shadow-lg flex-col lg:flex-row">
+  <figure>
+    <img
+    src="assest/image/caption.jpg"
+    class="max-w-screen-sm  rounded-none shadow-xl lg:w-80"  />
+  <div>
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Hotels</h2>
+    <p> 4-Star-Hotels-Sylhet-City
+    </p>
+    <div class="card-actions mt-10 justify-end">
+      <button class="btn bg-[#5B913B] text-[#131010]">Read More</button>
+    </div>
+  </div>
+   </div>
+  </div>
+   </div>
+   <div class="w-80 mb-10 lg:w-1/2">
+    <div class="h-[400px] lg:h-64">
+    <div class="card card-side rounded-none bg-white shadow-lg flex-col-reverse lg:flex-row">
+      <div class="card-body">
+        <h2 class="card-title">Bholaganj Sadapathor</h2>
+        <p> 
+           Bholaganj Sadapathor in Pictures – July-03-2025
+        </p>
+        <div class="card-actions justify-start">
+          <button class="btn bg-[#5B913B] text-[#131010]">Read More</button>
+        </div>
+      </div>
+      <figure>
+        <img
+        src="assest/image/sada.jpeg"
+        class="max-w-screen-sm h-[225px] rounded-none shadow-xl" />
+      <div>
+    </figure>
+       </div>
+      </div>
+   </div>
+  </div>
+</div>
+</section>
+<hr>
+ <section class="bg-opacity-0"   style="background-image: url(assest/image/cover.jpg); background-size: cover;">
+  <div class="hero-overlay mt-5 bg-opacity-0 min-h-[100px]">
+    <div class="hero-content flex-col lg:flex-row m-5">
+      <div class=" lg:ml-10">
+        <h3 class="text-2xl text-[#5B913B] font-extrabold lg:text-4xl">Online Hotel Booking</h3>
+        <h3 class="text-xl text-[#77B254] font-bold lg:text-2xl">Travel Sylhet</h3>
+      </div>
+      <div class=" lg:ml-10">
+        <h3 class="text-2xl text-[#5B913B] font-extrabold lg:text-4xl">Online Resort Booking</h3>
+        <h3 class="text-xl text-[#77B254] font-bold lg:text-2xl">
+          32 BEST Hotels in Sylhet</h3>
+      </div>
+    </div>
+  </div>
+  <div
+  class="hero min-h-[400px]">
+  <div class="hero-overlay bg-opacity-0"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <main class="w-full lg:w-[1280px] mx-auto">
+      <footer class="footer bg-white text-base-content p-10">
+        <nav>
+            <a href=""><img class="w-[300px] h-[80px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+          <h1 class="text-[12px] text-[#5B913B] font-bold lg:text-2xl">Ultimate Sylhet Travel Guide</h1>
+          <h3 class="text-[12px] text-[#77B254] font-bold lg:text-2xl">Information on Tourist Places in Sylhet</h3>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">SYLHET</h6>
+          <a class="link link-hover text-xl text-black" href="bisnakandi.html"><i class="las la-angle-right"></i> Bisnakandi</a>
+          <a class="link link-hover text-xl text-black" href="ratargul.html"><i class="las la-angle-right"></i> Ratargul</a>
+          <a class="link link-hover text-xl text-black" href="bholaganj-sada-pathor.html"><i class="las la-angle-right"></i>Bholaganj</a>
+          <a class="link link-hover text-xl text-black" href="tea-gardens.html"><i class="las la-angle-right"></i> Tea Gardens</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">TOURIST</h6>
+          <a class="link link-hover text-xl text-black" href="jaflong.html"><i class="las la-angle-right"></i> Jaflong</a>
+          <a class="link link-hover text-xl text-black" href="lalakhal.html"><i class="las la-angle-right"></i> Lalakhal</a>
+          <a class="link link-hover text-xl text-black" href="shapla-bill.html"><i class="las la-angle-right"></i>Shapla Bill</a>
+          <a class="link link-hover text-xl text-black" href="park.html"><i class="las la-angle-right"></i>Khadimnagar</a>
+          <a class="link link-hover text-xl text-black" href="sylhet-city.html"><i class="las la-angle-right"></i>Sylhet City</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">ATTRACTION</h6>
+          <a class="link link-hover text-xl text-black" href="sreemangal.html"><i class="las la-angle-right"></i>Sreemangal</a>
+          <a class="link link-hover text-xl text-black" href="lawachara.html"><i class="las la-angle-right"></i>Lawachara</a>
+          <a class="link link-hover text-xl text-black" href="lake.html"><i class="las la-angle-right"></i>Madhabpur Lake</a>
+          <a class="link link-hover text-xl text-black" href="madhabkunda.html"><i class="las la-angle-right"></i>Madhabkunda</a>
+          <a class="link link-hover text-xl text-black" href="satrang.html"><i class="las la-angle-right"></i> Satrang Tea</a>
+        </nav>
+      </footer>
+      <footer class="footer bg-white text-base-content border-base-300 border-t px-10 py-4">
+        <aside class="grid-flow-col items-center">
+          <div class="avatar-content">
+            <div class="w-16 rounded-none lg:w-32">
+              <img src="assest/image/Travel Logo (180 x 80 px).png" class="w-40" />
+            </div>
+          </div>
+          <p class="text-[12px] text-black items-start lg:text-lg">
+            Places to Visit in Sylhet
+            <br />
+            Copyright @ SylhetTouristPlaces.com 2025
+          </p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://x.com/cholojai1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a href="https://youtu.be/x0kF_mTWEgA?si=EnzW_-1P-SSyswSB">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/TourGroupSylhet">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </main>
+  </div>
+</div>
+ </section>      
+     <script src="assest/js/script.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</body>
+</html>

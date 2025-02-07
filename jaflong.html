@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaflong’s Zero Point || Jaflong – জাফলং</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style='font-family: "Poppins", serif;'>
+  <section>
+    <div class="navbar bg-white">
+      <div class="navbar-first justify-around items-center mx-auto flex-row-reverse lg:">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost ml-10 lg:hidden">
+            <label class="btn btn-circle bg-white swap swap-rotate">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+            
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myNav()"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myClose()"
+                viewBox="0 0 512 512">
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content -ml-16 bg-white rounded-none z-[1] mt-3 w-52 p-2 shadow" id="mNav">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Tourist Places</a>
+              <ul class="p-2 rounded-none">
+                  <li><a href="sreemangal.html"> Sreemangal</a></li>
+                  <li><a href="jaflong.html"> Jaflong</a></li>
+                  <li><a href="lalakhal.html">Lalakhal</a></li>
+                  <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                  <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                  <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                  <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                  <li><a href="park.html">Khadimnagar National Park</a></li>
+                  <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                  <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+                </ul>
+            </li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="food.html">Food Court</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl hidden lg:block"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+        <a class="btn btn-ghost text-xl -ml-12 block lg:hidden"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+      </div>
+      <div class="navbar-center justify-around items-center ml-44 hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home<i class="las la-angle-right"></i></a></li>
+          <li>
+            <details>
+              <summary>Tourist Places</summary>
+              <ul class="p-2 rounded-none">
+                <li><a href="sreemangal.html"> Sreemangal</a></li>
+                <li><a href="jaflong.html"> Jaflong</a></li>
+                <li><a href="lalakhal.html">Lalakhal</a></li>
+                <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                <li><a href="park.html">Khadimnagar National Park</a></li>
+                <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="hotels.html">Hotels<i class="las la-angle-right"></i></a></li>
+          <li><a href="resorts.html">Resorts<i class="las la-angle-right"></i></a></li>
+          <li><a href="restaurants.html">Restaurants<i class="las la-angle-right"></i></a></li>
+          <li><a href="food.html">Food Court<i class="las la-angle-right"></i></a></li>
+          <li><a href="blog.html">Blog<i class="las la-angle-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end mr-40 hidden lg:block">
+        <div class="navbar bg-white">
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="assest/image/avatar.jpeg" />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------
+ Jaflong’s “Zero Point
+------->
+<main>
+  <div
+  class="hero min-h-[550px]"
+  style="background-image: url(assest/Jaflong/Jaflong-Sylhet.jpg); background-size:cover; background-position:center; background-clip: content-box;">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-left text-neutral-content text-left">
+    <div class="max-w-screen-md">
+      <p class="mb-5 text-2xl text-left lg:-ml-[600px] mt-80">
+        Jaflong – জাফলং
+      </p>
+    </div>
+  </div>
+</div>
+</main>
+ <section class="w-full md:max-w-full lg:w-[1280px] m-auto">
+  <div class="hero bg-white min-h-screen">
+    <div class="hero-content flex-col lg:flex-row">
+      <img
+        src=""
+        class="max-w-sm rounded-none shadow-xl" />
+      <div>
+        <h1 class="text-xl font-bold md:text-2xl lg:text-5xl">Jaflong Travel Guide</h1>
+        <p class="py-6 text-left text-lg" id="">
+          Jaflong, located between tea gardens and hills, is the tourist hotspot of Sylhet,
+           a hill station, positioned on the border between Bangladesh and Meghalaya, the north-eastern state of India. Also home to the Khasi tribe, Jaflong is famed
+           for its lush, tropical setting and the areas of natural beauty surrounding it. <br>
+
+           These areas include the Piyain River, which flows between Bangladesh and India and 
+           is renowned for its crystal clear water that allows visitors to vividly see the
+            array of underwater stones. In Jaflong, visitors can also take in the cascading
+           waterfalls and rich greenery of the mountains of Meghalaya, and visit the historic
+           Dawki Bridge, a suspension bridge built by 
+           the British in 1932 and a road border crossing between Bangladesh and India. <br>
+           For maximum visual impact, Jaflong’s “Zero Point” is the place to be. Along with more spectacular waterfalls is one of Jaflong’s famed attractions: its vast range of underwater stones that are of different shapes and colours. Borne from the mountains of India by the powerful flow of the endless cascades, the stones add rich texture to the tranquil beauty of the Zero Point. The shimmering transparency of the water also attracts tourists to bathe, swim and relax in the water and surrounding sand fields. <br>
+           The waterfall Songram Punji or Mayabi Jhorna, is only a 10 to 15 minute walk from Zero Point, and is a popular hotspot for tourists to frolic in. Another waterfall, Khasia Village, is on the other side of the Piyain River and can be accessed by boat.
+        </p>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="bg-white mb-5 flex items-center justify-center min-h-[500px] lg:w-[1280px] m-auto">
+  <div class="relative rounded-none w-full max-w-7xl mx-auto lg:w-100% min-h-[500px]">
+    <!-- Carousel wrapper -->
+    <div class="overflow-hidden relative rounded-none min-h-[500px]">
+      <div
+        class="flex transition-transform duration-500 ease-in-out transform"
+        id="carousel"
+      >
+        <!-- Slide 1 -->
+        <div class="min-w-full ">
+          <img
+            src="assest/Jaflong/slide1.webp"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full">
+          <img
+            src="assest/Jaflong/slide2.jpg"
+            alt="Slide 2"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-full">
+          <img
+            src="assest/Jaflong/slide3.jpg"
+            alt="Slide 3"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 4 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Jaflong/slide4.jpg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 5 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Jaflong/slide5.jpg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 6 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Jaflong/slide6.1.jpg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button
+      class="absolute ml-5 top-1/2 left-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none lg:-mt-5"
+      onclick="scrollCarousel(-1)"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+    </button>
+    <button
+      class="absolute mr-5 top-1/2 right-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+      onclick="scrollCarousel(1)"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById("carousel");
+      const totalSlides = carousel.children.length;
+      currentIndex =
+        (currentIndex + direction + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${
+        currentIndex * 100
+      }%)`;
+    }
+  </script>
+</section>
+ <br>
+ <section>
+  <div class="hero bg-white min-h-[100px]">
+    <div class="hero-content text-left">
+      <div class="max-w-screen-md">
+        <p class="py-6 text-lg">
+          <strong class="font-bold"> Shopping in Jaflong</strong>
+          <br>
+          No trip to Jaflong is complete without sampling the local produce, and the many local markets in Jaflong sell the varied and interesting items made by the Khasi tribe. An ancient people who are indigenous to the Meghalaya region, they have a unique mythology and belief system that often influences the products they make.
+        </p>
+        <p class="py-6">
+          <strong>Best time to visit Jaflong
+          </strong><br>
+          Because of the easier access, most tourists visit Jaflong in winter. While the Zero Point can be reached during winter, and its beauty enjoyed, the waterfalls are unlikely to be at full strength due to a lack of rainwater.
+        During the monsoon season, the heavy rains transform the waterfalls into a spectacular vision, with dramatic cascades flowing from the mountains, lush greenness. However, “Zero Point” goes underwater during rainy session due to flood.
+        </p>
+        <p class="py-6"><strong>How to reach Jaflong</strong><br>
+          
+         The distance from Sylhet City to Jaflong is about 57 km, and can be travelled via bus and microbus. Bus options include the “Gate-Lock” service, which takes about 1 hour 30 minutes to get to Jaflong at a cost of Tk. 110. While normal bus service cost 70 taka, but take longer journey of around 2 hours 30 minutes due to more stops and pick-up locations along the way.
+         Both services start from Subhanighat in the city, with the Gate-Lock beginning its journey at 9am and thereafter running every hour. The other type of bus service departs every 10 minutes.
+        </p>
+        <p class="py-6"><strong>Rent a Car or Microbus</strong><br>   
+        Alternatively, tourists can rent a car or microbus from various important locations of the city such as Subhanighat, next to Osmani Children's Park or Nayarpool. Each stand features cars and microbuses, and rental prices range from Tk. 3000 to Tk. 5000 for a whole-day. While it is not recommended for this journey, travellers can opt for the CNG driven Auto-rickshaw, which costs Tk. 1200-1500 for a whole-day hire. This will result in a gruelling 2-hour journey to Jaflong.
+        </p>
+        <p class="py-6"><strong>Where to Stay in Jaflong</strong><br>
+          The Hotel-Inn is located in Jaflong's Mamar Bazaar and is only 1.6 km from the tourist centre of Zero Point. This can be travelled in 7 to 8 minutes by car and 15 to 20 minutes on foot. Room charges in this hotel are around Tk.1500-1800 per night.
+          Close to the border of India is the Jainta Hill Resort, which is around 6 to 7 km from Jaflong. Room rental is Tk. 2300 to 4000 a night. Even further out is the Nazimgarh Wilder Resort, which is located at Lalakhal – about 27 km from Jaflong. This is around an hour away but the resort’s access is very secure – no-one is admitted without being accompanied by a resident guest. The charge for staying in this resort is Tk. 12500 to 44000 a night. 
+         </p>
+        <p class="py-6"><strong>Where to Eat in Jaflong</strong><br>
+          The two best restaurants in Jaflong are the Jaflong View Restaurant, you can view the beauty of Zero Point from the restaurant. Another restaurant is Jaflong Inn , which is located in the Mamar Bazaar and about 2 km from Zero Point.
+        </p>
+        <p class="py-6"><strong>Caution - Border Security and Deep Water Risks</strong><br>
+         Tourists looking to swim in the beautiful waters of Jaflong and the Zero Point must be aware of the risks from deep water, which can plunge to greater depths in some places with little warning. In addition, respect and attention must be shown to the Bangladesh border guards – Jaflong is in a border area and there are numerous rules and instructions to follow in the interests of security.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid1.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid2.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>   
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid3.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid4.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div> 
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid5.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>    
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid6.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid7.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid8.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid9.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid10.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid11.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Jaflong/grid/grid12.webp"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <!-- Repeat this div for each image -->
+    </div>
+  </div>
+</div>
+<div class="hero">
+  <div class="hero-content">
+    
+    
+  </div>
+</div>
+<div
+class="hero min-h-[500px] bg-white lg:w-[1280px] m-auto">
+<div class="hero-overlay bg-white text-neutral-content text-left">
+  <div class="max-w-screen-lg">
+    <h1 class="card-title text-black text-xl mb-5">Sylhet to Jaflong Road Map</h1>
+    <div class="relative w-full h-[500px] lg:w-[1280px]">
+      <iframe class="absolute top-0 left-0 w-full h-full"
+      src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d231353.74781984024!2d91.8540992673916!3d25.037389134843576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!3m2!1d24.8949294!2d91.8687063!4m5!1s0x375044bd7d747f47%3A0xef2b6cb5bcade375!2sJaflong!3m2!1d25.1633829!2d92.0175242!5e0!3m2!1sen!2sbd!4v1675606903165!5m2!1sen!2sbd"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+</div>
+ </section>
+ <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+  <div class="border-b mb-5 flex justify-between text-sm">
+      <div class="text-black flex items-center pb-2 pr-2 border-b-2 border-black uppercase">
+        <i class="las la-globe-asia  mr-3 text-4xl" id="Capa-1"></i>
+        
+          <a href="#" class="text-2xl   font-bold  text-center inline-block">Places to visit in Jaflong </a>
+      </div>
+      <a href="#">See All</a>
+  </div>
+
+
+  <div class="grid mb-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+       <!-- CARD 1 -->
+    <div class="rounded overflow-hidden shadow-lg flex flex-col">
+      <a href="#"></a>
+      <div class="relative"><a href="#">
+        <img class="w-full"
+        src="assest/image/Lalakhal – লালাখাল.jpeg"
+        alt="Lalakhal – লালাখাল"  />
+              <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+              </div>
+          </a><a href="#!">
+             
+          </a>
+      </div>
+      <div class="px-6 py-4 mb-auto">
+        <h2 class="card-title"><a href="lalakhal.html" class="text-[#77B254]">Lalakhal – লালাখাল</a></h2>
+      </div>
+      <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+        <a href="lalakhal.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+      </div>
+  </div>
+    <!-- CARD 2 -->
+    <div class="rounded overflow-hidden shadow-lg flex flex-col">
+      <a href="#"></a>
+      <div class="relative"><a href="#">
+        <img class="w-full"
+        src="assest/image/Khadimnagar National Park.jpeg"
+        alt="
+        Khadimnagar National Park – খাদিমনগর জাতীয় উদ্যান" />
+              <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+              </div>
+          </a><a href="#!">
+             
+          </a>
+      </div>
+      <div class="px-6 py-4 mb-auto">
+        <h2 class="card-title h-14"><a href="khadimnagar.html" class="text-[#77B254]"> Khadimnagar National Park – খাদিমনগর জাতীয় উদ্যান</a></h2>
+      </div>
+      <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+         <a href="khadimnagar.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+      </div>
+  </div> 
+      <!-- CARD 3 -->
+      
+       <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/Shapla-Bill-Sylhet-Dibir-Haor-1.jpg"
+         alt="shapla-bill"/>
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title"><a href="shapla-bill.html" class="text-[#77B254]">Shapla Bill Sylhet – শাপলা বিল জৈন্তাপুর</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+          <a href="shapla-bill.html" class="btn bg-[#5B913B] text-[#131010] text-center">Click Here</a>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+  <section class="bg-opacity-60 mt-10"   style="background-image: url(assest/Resorte/Balishira\ Resort.jpg); background-size: cover;">
+    <div class="hero-overlay mt-5 bg-opacity-60 min-h-[100px]">
+      <div class="hero-content flex-col lg:flex-row m-5">
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Hotel Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">Travel Sylhet</h3>
+        </div>
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Resort Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">
+            32 BEST Hotels in Sylhet</h3>
+        </div>
+      </div>
+    </div>
+    <div
+    class="hero min-h-[400px]">
+    <div class="hero-overlay bg-opacity-0"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <main class="w-full lg:w-[1280px] mx-auto">
+        <footer class="footer bg-white text-base-content p-10">
+          <nav>
+              <a href=""><img class="w-[300px] h-[80px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+            <h1 class="text-[12px] text-[#5B913B] font-bold lg:text-2xl">Ultimate Sylhet Travel Guide</h1>
+            <h3 class="text-[12px] text-[#77B254] font-bold lg:text-2xl">Information on Tourist Places in Sylhet</h3>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">SYLHET</h6>
+            <a class="link link-hover text-xl text-black" href="bisnakandi.html"><i class="las la-angle-right"></i> Bisnakandi</a>
+            <a class="link link-hover text-xl text-black" href="ratargul.html"><i class="las la-angle-right"></i> Ratargul</a>
+            <a class="link link-hover text-xl text-black" href="bholaganj-sada-pathor.html"><i class="las la-angle-right"></i>Bholaganj</a>
+            <a class="link link-hover text-xl text-black" href="tea-gardens.html"><i class="las la-angle-right"></i> Tea Gardens</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">TOURIST</h6>
+            <a class="link link-hover text-xl text-black" href="jaflong.html"><i class="las la-angle-right"></i> Jaflong</a>
+            <a class="link link-hover text-xl text-black" href="lalakhal.html"><i class="las la-angle-right"></i> Lalakhal</a>
+            <a class="link link-hover text-xl text-black" href="shapla-bill.html"><i class="las la-angle-right"></i>Shapla Bill</a>
+            <a class="link link-hover text-xl text-black" href="park.html"><i class="las la-angle-right"></i>Khadimnagar</a>
+            <a class="link link-hover text-xl text-black" href="sylhet-city.html"><i class="las la-angle-right"></i>Sylhet City</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">ATTRACTION</h6>
+            <a class="link link-hover text-xl text-black" href="sreemangal.html"><i class="las la-angle-right"></i>Sreemangal</a>
+            <a class="link link-hover text-xl text-black" href="lawachara.html"><i class="las la-angle-right"></i>Lawachara</a>
+            <a class="link link-hover text-xl text-black" href="lake.html"><i class="las la-angle-right"></i>Madhabpur Lake</a>
+            <a class="link link-hover text-xl text-black" href="madhabkunda.html"><i class="las la-angle-right"></i>Madhabkunda</a>
+            <a class="link link-hover text-xl text-black" href="satrang.html"><i class="las la-angle-right"></i> Satrang Tea</a>
+          </nav>
+        </footer>
+        <footer class="footer bg-white text-base-content border-base-300 border-t px-10 py-4">
+          <aside class="grid-flow-col items-center">
+            <div class="avatar-content">
+              <div class="w-16 rounded-none lg:w-32">
+                <img src="assest/image/Travel Logo (180 x 80 px).png" class="w-40" />
+              </div>
+            </div>
+            <p class="text-[12px] text-black items-start lg:text-lg">
+              Places to Visit in Sylhet
+              <br />
+              Copyright @ SylhetTouristPlaces.com 2025
+            </p>
+          </aside>
+          <nav class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+              <a href="https://x.com/cholojai1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                </svg>
+              </a>
+              <a href="https://youtu.be/x0kF_mTWEgA?si=EnzW_-1P-SSyswSB">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/TourGroupSylhet">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </footer>
+      </main>
+    </div>
+  </div>
+   </section>  
+        
+       <script src="assest/js/script.js"></script>
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </body>
+  </html>

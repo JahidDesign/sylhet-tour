@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreemangal Tourist Spot</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style='font-family: "Poppins", serif;'>
+  <section>
+    <div class="navbar bg-white">
+      <div class="navbar-first justify-around items-center mx-auto flex-row-reverse lg:">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost ml-10 lg:hidden">
+            <label class="btn btn-circle bg-white swap swap-rotate">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+            
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myNav()"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myClose()"
+                viewBox="0 0 512 512">
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content -ml-16 bg-white rounded-none z-[1] mt-3 w-52 p-2 shadow" id="mNav">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Tourist Places</a>
+              <ul class="p-2 rounded-none">
+                  <li><a href="sreemangal.html"> Sreemangal</a></li>
+                  <li><a href="jaflong.html"> Jaflong</a></li>
+                  <li><a href="lalakhal.html">Lalakhal</a></li>
+                  <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                  <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                  <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                  <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                  <li><a href="park.html">Khadimnagar National Park</a></li>
+                  <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                  <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+                </ul>
+            </li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="food.html">Food Court</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl hidden lg:block"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+        <a class="btn btn-ghost text-xl -ml-12 block lg:hidden"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+      </div>
+      <div class="navbar-center justify-around items-center ml-44 hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home<i class="las la-angle-right"></i></a></li>
+          <li>
+            <details>
+              <summary>Tourist Places</summary>
+              <ul class="p-2 rounded-none">
+                <li><a href="sreemangal.html"> Sreemangal</a></li>
+                <li><a href="jaflong.html"> Jaflong</a></li>
+                <li><a href="lalakhal.html">Lalakhal</a></li>
+                <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                <li><a href="park.html">Khadimnagar National Park</a></li>
+                <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="hotels.html">Hotels<i class="las la-angle-right"></i></a></li>
+          <li><a href="resorts.html">Resorts<i class="las la-angle-right"></i></a></li>
+          <li><a href="restaurants.html">Restaurants<i class="las la-angle-right"></i></a></li>
+          <li><a href="food.html">Food Court<i class="las la-angle-right"></i></a></li>
+          <li><a href="blog.html">Blog<i class="las la-angle-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end mr-40 hidden lg:block">
+        <div class="navbar bg-white">
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="assest/image/avatar.jpeg" />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------
+ Sylhet and Sreemangal
+------->
+<main>
+  <div
+  class="hero min-h-[650px]"
+  style="background-image: url(assest/Sreemangal/sreemongol.webp); background-size:cover; background-position:center; background-clip: content-box;">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Welcome</h1>
+      <p class="mb-5 text-2xl">
+        to Tea Country 
+      </p>
+    </div>
+  </div>
+</div>
+</main>
+ <section class="w-full md:max-w-full lg:w-[1280px] m-auto">
+  <div class="hero bg-white min-h-screen">
+    <div class="hero-content flex-col lg:flex-row">
+      <img
+        src=""
+        class="max-w-sm rounded-none shadow-xl" />
+      <div>
+        <h1 class="text-xl font-bold md:text-2xl lg:text-5xl">Sreemangal Tourist Spot</h1>
+        <p class="py-6 text-left text-lg" id="">
+          Sreemangal is known as the tea capital of Bangladesh. Sreemangal’s tea gardens can
+           be seen for miles and miles. The town is surrounded by more than 40 tea gardens, lakes, lofty hills, dense jungles, lemon and pineapple gardens and rubber gardens. Sreemangal’s lush greenery and beautiful 
+          trees promise to create a unique impression on all visitors.
+           The impressive green shade of the majestic trees, coupled with the azure sky, is
+            truly breathtaking. <br>
+
+        Sreemangal’s highlights include the Tea Gardens, Lawachara National Park,
+         Madhabkunda Waterfall, Madhabpur Lake, and Sitesh Babur Zoo, among others. <br>
+      <strong>How to Reach Sreemangal!</strong> <br>
+       Sreemangal is located 190 km from Dhaka and 83 km from Sylhet. Visitors
+        have the option of taking a bus, train or renting a car. In addition, public 
+        transit connections exist from Sylhet City as well. <br>
+       <strong>Best Time to Visit Sreemangal</strong> <br>
+       Sreemangal can be visited in both rainy season and winter. Sreemangal is 
+       famous for pineapples and lemons, as well as lychees and bananas.
+        To enjoy fresh pineapples, visit Sreemangal in the middle of May. 
+        In fact, the weather during this time is very hot. To buy fresh 
+        pineapples from local gardens, it is recommended to wait for local 
+        farmers on Radhanagar Road around 6 AM. In fact, 
+        they do not sell fewer than 100 pieces. Otherwise, 
+        you can visit the Pineapple Bazaar in Sreemangal town near the railway station.
+        </p>
+      </div>
+    </div>
+  </div>
+ </section>
+ <section class="bg-white mb-5 flex items-center justify-center min-h-[500px] lg:w-[1280px] m-auto">
+  <div class="relative rounded-none w-full max-w-7xl mx-auto lg:w-100% min-h-[500px]">
+    <!-- Carousel wrapper -->
+    <div class="overflow-hidden relative rounded-none min-h-[500px]">
+      <div
+        class="flex transition-transform duration-500 ease-in-out transform"
+        id="carousel"
+      >
+        <!-- Slide 1 -->
+        <div class="min-w-full ">
+          <img
+            src="assest/Sreemangal/tea-country.png"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="min-w-full">
+          <img
+            src="assest/Sreemangal/top-banner.webp"
+            alt="Slide 2"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-full">
+          <img
+            src="assest/Sreemangal/slide2.jpg"
+            alt="Slide 3"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 4 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Sreemangal/tea.jpeg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 5 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Sreemangal/balishira-resort-sreemangal-sylhet-1120x800.jpg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+         <!-- Slide 6 -->
+         <div class="min-w-full">
+          <img
+            src="assest/Sreemangal/caa_baagaaner_pthe-_sheheriin_aamin_supti_.jpeg"
+            alt="Slide 1"
+            class="w-full h-[550px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button
+      class="absolute ml-5 top-1/2 left-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none lg:-mt-5"
+      onclick="scrollCarousel(-1)"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+    </button>
+    <button
+      class="absolute mr-5 top-1/2 right-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+      onclick="scrollCarousel(1)"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById("carousel");
+      const totalSlides = carousel.children.length;
+      currentIndex =
+        (currentIndex + direction + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${
+        currentIndex * 100
+      }%)`;
+    }
+  </script>
+</section>
+ <br>
+ <section>
+  <div class="hero bg-white min-h-[300px]">
+    <div class="hero-content text-left">
+      <div class="max-w-screen-md">
+        <h1 class="text-3xl font-bold">What to do in Sreemangal?</h1>
+        <p class="py-6 text-lg">
+          <strong> Here is list of main Attractions:</strong>
+          <br>
+          1. Visit the Sreemangal Tea Gardens: <br>
+          Known as the "Tea Capital of Bangladesh," Sreemangal is home to numerous tea estates. Take a tour of the lush green tea gardens, learn about the tea production process, and enjoy the scenic beauty.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+  class="hero min-h-[500px] lg:w-[1280px] m-auto"
+  style="background-image: url(assest/Sreemangal/Sreemangal.jpg);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      
+    </div>
+  </div>
+</div>
+
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>2. Explore Lawachara National Park</strong> <br>
+        Lawachara National Park’s main attraction is its biodiversity. About 460 types of rare plants and different wild animals can be seen here, including various types of birds, deer, monkeys, pythons, mountain moths, and doves. With the help of trained guides, travellers can easily trek through the many forest trails inside Lawachara National Park. <br>
+        The park is located only 8 km from Sreemangal city. Tourists can visit the park by renting tourist jeep, auto-rickshaws or cars.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="hero bg-white min-h-[100px]">
+  <div class="hero-content text-left">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>3. Enjoy the Madhabkunda Waterfall</strong> <br>
+       <strong> Madhabkunda Waterfall</strong> is one of the main attractions in the Sylhet area for waterfall lovers. The immense water streams, large boulders and surrounding green forest make Madhabkunda truly unique. Tourists can lounge or swim in the peaceful water. Madhabkunda Waterfall is best experienced during rainy season.
+      </p>
+    </div> <br>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>4. Visit the Tribal Villages - Manipuri and Khasia Villages</strong> <br>
+       Experience the unique cultures of the local ethnic communities. Visit Manipuri villages to see traditional dance performances and handicrafts, and Khasia villages to learn about their betel leaf cultivation.
+       
+      </p>
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>
+        5. Experience the Seven Layer Tea</strong> <br>
+       <strong> Nilkantha Tea Cabin:</strong> Famous for its unique seven-layer tea, where each layer has a distinct color and flavor. It's a must-try for tea enthusiasts visiting Sreemangal.
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>6. Explore the Baikka Beel Wetland Sanctuary</strong> <br>
+       <strong> Baikka Beel Wetland: </strong> 
+       A haven for bird watchers, especially during the winter months when migratory birds visit. The wetland is home to a variety of fish and aquatic plants as well.
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>7. Visit the Madhabpur Lake</strong> <br>
+       <strong> </strong> 
+       Located within a tea estate, this serene lake is surrounded by hills and tea gardens. It's a perfect spot for a peaceful boat ride and to enjoy the natural beauty.
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>
+        8. Trek to Ham Ham Waterfall</strong> <br>
+       <strong> </strong>
+       An adventurous trek through dense forests and hilly terrain leads to this stunning waterfall. It's a challenging hike but rewarding with its breathtaking views. 
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>
+        9. Visit the Tea Research Institute</strong> <br>
+       <strong>Bangladesh Tea Research Institute:</strong> 
+       Learn about the history, research, and development of tea in Bangladesh. The institute offers insightful tours and exhibits.
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="max-w-screen-md">
+      <p class="py-6 text-lg">
+       <strong>10. Experience the Traditional Markets</strong> <br>
+       <strong>Local Markets: </strong> 
+       Visit the bustling local markets to buy fresh produce, handicrafts, and souvenirs. The markets are a great place to experience the local culture and interact with friendly locals.
+    </div>
+  </div>
+</div>
+<div class="hero min-h-[100px]">
+  <div class="hero-content">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid1.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid2.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>   
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid3.gif"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid4.gif"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div> 
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid5.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>    
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid6.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid7.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid8.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid9.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid10.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid11.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <div class="group cursor-pointer relative">
+        <img
+          src="assest/Sreemangal/grid/grid12.jpg"
+          alt="Image 1"
+          class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">
+            View
+          </button>
+        </div>
+      </div>
+      <!-- Repeat this div for each image -->
+    </div>
+  </div>
+</div>
+<div
+class="hero min-h-[500px] bg-white lg:w-[1280px] m-auto">
+<div class="hero-overlay bg-white text-neutral-content text-left">
+  <div class="max-w-screen-lg">
+    <h1 class="card-title text-black text-xl mb-5">Sylhet to Sreemongol Road Map</h1>
+    <div class="relative w-full h-[500px] lg:w-[1280px]">
+      <iframe class="absolute top-0 left-0 w-full h-full"
+      src="https://www.booking.com/flexiproduct.html?product=map&w=100%25&h=590&lang=en-US&aid=2313022&target_aid=2313022&dest_id=0&dest_type=landmark&fid=1738928923141&latitude=24.3065193&longitude=91.7295503&landmark_name=Sreemangal&mwhsb=1&address=Sreemangal%2C%20Bangladesh&affiliate-link=widget1&"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+</div>
+ </section>
+ <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+  <div class="border-b mb-5 flex justify-between text-sm">
+      <div class="text-black flex items-center pb-2 pr-2 border-b-2 border-black uppercase">
+        <i class="las la-globe-asia  mr-3 text-4xl" id="Capa-1"></i>
+        
+          <a href="#" class="text-2xl   font-bold  text-center inline-block">Places to visit in Sreemongol</a>
+      </div>
+      <a href="#">See All</a>
+  </div>
+
+
+  <div class="grid mb-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+      <!-- CARD 1 -->
+  <div class="rounded overflow-hidden shadow-lg flex flex-col">
+    <a href="#"></a>
+    <div class="relative"><a href="#">
+      <img class="w-full"
+      src="assest/image/Sylhet City – সিলেট শহর.jpeg"
+      alt="Sylhet City – সিলেট শহর"/>
+            <div
+                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+            </div>
+        </a><a href="#!">
+           
+        </a>
+    </div>
+    <div class="px-6 py-4 mb-auto">
+      <h2 class="card-title h-14"><a href="sylhet-city.html" class="text-[#77B254]">Sylhet City – সিলেট শহর</a></h2>
+    </div>
+    <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+       <a href="sylhet-city.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+    </div>
+</div>
+
+
+      <!-- CARD 2 -->
+      <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/Madhabkunda-waterfall.jpg"
+          alt="Madhabkunda Waterfall"/>
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title"><a href="madhabkunda-waterfall.html" class="text-[#77B254]">Madhabkunda Waterfall – মাধবকুন্ড</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+           <a href="madhabkunda-waterfall.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+        </div>
+    </div>
+
+
+      
+      <!-- CARD 3 -->
+      <div class="rounded overflow-hidden shadow-lg flex flex-col">
+        <a href="#"></a>
+        <div class="relative"><a href="#">
+          <img class="w-full"
+          src="assest/image/tea-g.jpg"
+          alt="Tea Gardens – চা বাগান"/>
+                <div
+                    class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+            </a><a href="#!">
+               
+            </a>
+        </div>
+        <div class="px-6 py-4 mb-auto">
+          <h2 class="card-title h-14"><a href="tea-gardens.html" class="text-[#77B254]">Tea Gardens – চা বাগান</a></h2>
+        </div>
+        <div class="px-6 py-3 flex flex-row items-center justify-center bg-white">
+          <a href="tea-gardens.html" class="btn bg-[#5B913B] text-[#131010]">Click Here</a>
+        </div>
+    </div>
+
+  </div>
+</div>
+  <section class="bg-opacity-60 mt-10"   style="background-image: url(assest/Resorte/Balishira\ Resort.jpg); background-size: cover;">
+    <div class="hero-overlay mt-5 bg-opacity-60 min-h-[100px]">
+      <div class="hero-content flex-col lg:flex-row m-5">
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Hotel Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">Travel Sylhet</h3>
+        </div>
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Resort Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">
+            32 BEST Hotels in Sylhet</h3>
+        </div>
+      </div>
+    </div>
+    <div
+    class="hero min-h-[400px]">
+    <div class="hero-overlay bg-opacity-0"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <main class="w-full lg:w-[1280px] mx-auto">
+        <footer class="footer bg-white text-base-content p-10">
+          <nav>
+              <a href=""><img class="w-[300px] h-[80px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+            <h1 class="text-[12px] text-[#5B913B] font-bold lg:text-2xl">Ultimate Sylhet Travel Guide</h1>
+            <h3 class="text-[12px] text-[#77B254] font-bold lg:text-2xl">Information on Tourist Places in Sylhet</h3>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">SYLHET</h6>
+            <a class="link link-hover text-xl text-black" href="bisnakandi.html"><i class="las la-angle-right"></i> Bisnakandi</a>
+            <a class="link link-hover text-xl text-black" href="ratargul.html"><i class="las la-angle-right"></i> Ratargul</a>
+            <a class="link link-hover text-xl text-black" href="bholaganj-sada-pathor.html"><i class="las la-angle-right"></i>Bholaganj</a>
+            <a class="link link-hover text-xl text-black" href="tea-gardens.html"><i class="las la-angle-right"></i> Tea Gardens</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">TOURIST</h6>
+            <a class="link link-hover text-xl text-black" href="jaflong.html"><i class="las la-angle-right"></i> Jaflong</a>
+            <a class="link link-hover text-xl text-black" href="lalakhal.html"><i class="las la-angle-right"></i> Lalakhal</a>
+            <a class="link link-hover text-xl text-black" href="shapla-bill.html"><i class="las la-angle-right"></i>Shapla Bill</a>
+            <a class="link link-hover text-xl text-black" href="park.html"><i class="las la-angle-right"></i>Khadimnagar</a>
+            <a class="link link-hover text-xl text-black" href="sylhet-city.html"><i class="las la-angle-right"></i>Sylhet City</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">ATTRACTION</h6>
+            <a class="link link-hover text-xl text-black" href="sreemangal.html"><i class="las la-angle-right"></i>Sreemangal</a>
+            <a class="link link-hover text-xl text-black" href="lawachara.html"><i class="las la-angle-right"></i>Lawachara</a>
+            <a class="link link-hover text-xl text-black" href="lake.html"><i class="las la-angle-right"></i>Madhabpur Lake</a>
+            <a class="link link-hover text-xl text-black" href="madhabkunda.html"><i class="las la-angle-right"></i>Madhabkunda</a>
+            <a class="link link-hover text-xl text-black" href="satrang.html"><i class="las la-angle-right"></i> Satrang Tea</a>
+          </nav>
+        </footer>
+        <footer class="footer bg-white text-base-content border-base-300 border-t px-10 py-4">
+          <aside class="grid-flow-col items-center">
+            <div class="avatar-content">
+              <div class="w-16 rounded-none lg:w-32">
+                <img src="assest/image/Travel Logo (180 x 80 px).png" class="w-40" />
+              </div>
+            </div>
+            <p class="text-[12px] text-black items-start lg:text-lg">
+              Places to Visit in Sylhet
+              <br />
+              Copyright @ SylhetTouristPlaces.com 2025
+            </p>
+          </aside>
+          <nav class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+              <a href="https://x.com/cholojai1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                </svg>
+              </a>
+              <a href="https://youtu.be/x0kF_mTWEgA?si=EnzW_-1P-SSyswSB">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/TourGroupSylhet">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </footer>
+      </main>
+    </div>
+  </div>
+   </section>  
+        
+       <script src="assest/js/script.js"></script>
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </body>
+  </html>

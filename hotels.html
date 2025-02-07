@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best hotels in Sylhet</title>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body style='font-family: "Poppins", serif;'>
+  <section>
+    <div class="navbar bg-white">
+      <div class="navbar-first justify-around items-center mx-auto flex-row-reverse lg:">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost ml-10 lg:hidden">
+            <label class="btn btn-circle bg-white swap swap-rotate">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+            
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myNav()"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                onclick="myClose()"
+                viewBox="0 0 512 512">
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content -ml-16 bg-white rounded-none z-[1] mt-3 w-52 p-2 shadow" id="mNav">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a>Tourist Places</a>
+              <ul class="p-2 rounded-none">
+                  <li><a href="sreemangal.html"> Sreemangal</a></li>
+                  <li><a href="jaflong.html"> Jaflong</a></li>
+                  <li><a href="lalakhal.html">Lalakhal</a></li>
+                  <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                  <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                  <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                  <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                  <li><a href="park.html">Khadimnagar National Park</a></li>
+                  <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                  <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+                </ul>
+            </li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="food.html">Food Court</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl hidden lg:block"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+        <a class="btn btn-ghost text-xl -ml-12 block lg:hidden"> <img class="w-[250px] h-[50px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+      </div>
+      <div class="navbar-center justify-around items-center ml-44 hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html">Home<i class="las la-angle-right"></i></a></li>
+          <li>
+            <details>
+              <summary>Tourist Places</summary>
+              <ul class="p-2 rounded-none">
+                <li><a href="sreemangal.html"> Sreemangal</a></li>
+                <li><a href="jaflong.html"> Jaflong</a></li>
+                <li><a href="lalakhal.html">Lalakhal</a></li>
+                <li><a href="bisnakandi.html">Bisnakandi</a></li>
+                <li><a href="bholaganj-sada-pathor.html">Bholaganj Sada Pathor</a></li>
+                <li><a href="madhabkunda-waterfall.html">Madhabkunda Waterfall</a></li>
+                <li><a href="shapla-bill.html">Shapla Bill</a></li>
+                <li><a href="park.html">Khadimnagar National Park</a></li>
+                <li><a href="tea-gardens.html">Tea Gardens</a></li>
+                <li><a href="sylhet-city.html">Sylhet City Tour </a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="hotels.html">Hotels<i class="las la-angle-right"></i></a></li>
+          <li><a href="resorts.html">Resorts<i class="las la-angle-right"></i></a></li>
+          <li><a href="restaurants.html">Restaurants<i class="las la-angle-right"></i></a></li>
+          <li><a href="food.html">Food Court<i class="las la-angle-right"></i></a></li>
+          <li><a href="blog.html">Blog<i class="las la-angle-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end mr-40 hidden lg:block">
+        <div class="navbar bg-white">
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="assest/image/avatar.jpeg" />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------Hotels------->
+  <section>
+    <div
+  class="hero min-h-[480px]"
+  style="background-image: url(assest/Hotels/sultan.webp);background-size:cover; background-repeat: no-repeat;">
+  <div class="hero-overlay bg-opacity-70"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-3xl text-white font-bold">
+        Find luxury hotels in Sylhet
+        <i class="las la-minus text-9xl -mt-8"></i>
+      </h1>
+    </div>
+  </div>
+</div>
+<main class="w-full mb-14 lg:w-[1280px] m-auto">
+  <div class="hero bg-white min-h-[200px]">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-2xl text-[#5B913B] font-extrabold lg:text-4xl">Best hotels in Sylhet</h1>
+        <p class="py-6 text-xl text-[#77B254] font-bold lg:text-xl">     
+         Here is a list of 12 BEST hotels in Sylhet
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 w-full rounded-none container bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/Hotel Rose.jpg"
+        alt="Hotel Rose" class=" lg:h-[505px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Rose</h2>
+      <p>5 Star Hotel in Sylhet with Restaurant / Avg. Price 8000-9000 BDT <br>
+        Shahjalal Uposohor, Sylhet <br>
+        <strong class="text-[#780C28]">1.2 kilometers</strong> <br>
+        WiFi / Restaurant / Swimming Pool / Parking/ Gym Fitness center / Conference Hall/ Banquet Hall
+      </p>
+      <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28954.278066808864!2d91.85263549409123!3d24.888266708832123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x37505528367b7ac5%3A0xd3af9a6aee2fd11e!2sHotel%20Noorjahan%20Grand%2C%20Waves%201%2C%20Dargah%20Gate%2C%20Sylhet%203100!3m2!1d24.9019566!2d91.8697602!5e0!3m2!1sen!2sbd!4v1582382879911!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.roseviewhotel.com/" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure class="">
+     
+      <img
+        src="assest/Hotels/cr0.jpg"
+        alt="Hotel Rose" class=" w-full lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Crystal Rose</h2>
+      <p>With breakfast / Avg. Price BDT 4000+ to BDT 10,000+ <br>
+        18 Electric Supply Road, Sylhet <br>
+        <strong class="text-[#780C28]">1.8 kilometers</strong> <br>
+        WiFi / Restaurant / Parking
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.hotelcrystalrose.com/" class="btn bg-[#5B913B] text-center text-[#131010]">Book Online</a>
+      </div>
+      <iframe class="w-full h-64" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14475.750760022707!2d91.8639068537865!3d24.90010694645134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3750552af8919883%3A0x6fc2fe33c01b3797!2sZindabazar%2C%20Sylhet!3m2!1d24.8948017!2d91.8690311!4m5!1s0x37505574f163f92b%3A0x4aba036d2ac62c92!2sHotel%20Crystal%20Rose%2C%20Sylhet%2C%20Digonto%209%2C%209%20Electric%20Supply%20Rd%2C%20Sylhet%203100!3m2!1d24.905304899999997!2d91.87259859999999!5e0!3m2!1sen!2sbd!4v1716644724112!5m2!1sen!2sbd"  allowfullscreen="allowfullscreen"></iframe>
+    
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/noor.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]" />
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title"> Noorjahan Grand</h2>
+      <p>3-Star Hotel in Sylhet With Restaurant / Avg. Price 3000-4000 BDT<br>
+        Dargah Gate, Sylhet <br>
+        <strong class="text-[#780C28]">3.5 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Gym Fitness center / Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/searchresults.en-gb.html?aid=311984&label=noorjahan-grand-uE0pFalnRX0fK2MC%2A02ywwS393134531889%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-411208524201%3Alp9069470%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbSsBl3MCvHsD8UKUHIRFxY&gclid=CjwKCAiA74G9BhAEEiwA8kNfpSuJR-N8_bPG_KfjbbmeEu-KKlY9O2gHPg53ueostFJfZMXPgjlExBoC6gMQAvD_BwE&highlighted_hotels=2295333&redirected=1&city=900052126&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=d7f2f25e2495f1a986b44d66e5f6bdd4" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe class="w-full h-64" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28954.278066808864!2d91.85263549409123!3d24.888266708832123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x37505528367b7ac5%3A0xd3af9a6aee2fd11e!2sHotel%20Noorjahan%20Grand%2C%20Waves%201%2C%20Dargah%20Gate%2C%20Sylhet%203100!3m2!1d24.9019566!2d91.8697602!5e0!3m2!1sen!2sbd!4v1582382879911!5m2!1sen!2sbd"  frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/mira.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">  Hotel Mira Garden</h2>
+      <p>With Restaurant / Avg. price 3000 - 4000 BDT<br>
+        Mirabazar, Sylhet <br>
+        <strong class="text-[#780C28]">2.4 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="http://www.hotelmiragarden.com.bd/" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+
+      <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28954.278066808864!2d91.85263549409123!3d24.888266708832123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x37505528367b7ac5%3A0xd3af9a6aee2fd11e!2sHotel%20Noorjahan%20Grand%2C%20Waves%201%2C%20Dargah%20Gate%2C%20Sylhet%203100!3m2!1d24.9019566!2d91.8697602!5e0!3m2!1sen!2sbd!4v1582382879911!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/sup.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Supreme</h2>
+      <p>
+        3 Star Hotel in Sylhet with Restaurant / Avg. price 2500-3500 BDT <br>
+        Mirabazar, Sylhet
+         <br>
+        <strong class="text-[#780C28]">2.7 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/searchresults.en-gb.html?aid=311984&label=supreme-GmcwVfqXOzCiBAUoAIvRUgS392743250564%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-123039336%3Alp9069470%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&gclid=CjwKCAiA74G9BhAEEiwA8kNfpWZqHGp79bquvgwhIx9KSb_Nyr5FcojZOT8en3-oc3Am_uHLh5tRkxoCuqsQAvD_BwE&highlighted_hotels=235922&redirected=1&city=-73635&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=d7f2f25e2495f1a986b44d66e5f6bdd4" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14477.353241702867!2d91.87444457092647!3d24.8864393099639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x375054d279427b2b%3A0x53c1775b1a01c148!2sHotel%20Supreme%2C%20East%20Tamabil%20Road%2C%20Mira%20Bazar%2C%20Sylhet%203100!3m2!1d24.8950705!2d91.88306519999999!5e0!3m2!1sen!2sbd!4v1582358837139!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+     
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/dallas.jpg"
+        alt="Hotel Rose" class=" lg:h-[540px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Dallas</h2>
+      <p>
+        3 Star Hotel in Sylhet / Avg. Price 3500-4000 BDT <br>
+        North Jail Road, Sylhet <br>
+        <strong class="text-[#780C28]"> 550 Meter from Zindabazar</strong> <br>
+        WiFi / Restaurant / Parking/ Air Conditioned / Elevator in Building / Airport Shuttle
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/searchresults.en-gb.html?aid=311984&label=dallas-sylhet-R30tC3y92u1_PselBO_adgS275189141004%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-332852173845%3Alp9069470%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YbSsBl3MCvHsD8UKUHIRFxY&gclid=CjwKCAiA74G9BhAEEiwA8kNfpUrXRTgZExXNYJFEHBAWp5mw-eq7iyRllo1zsgsZvpaHnt9IDbFOLxoCdhEQAvD_BwE&highlighted_hotels=2772778&redirected=1&city=900052126&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=d7f2f25e2495f1a986b44d66e5f6bdd4" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4429.997950996756!2d91.86863146981516!3d24.893851256606858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3750552af8919883%3A0x6fc2fe33c01b3797!2sZindabazar%2C%20Sylhet!3m2!1d24.8948017!2d91.8690311!4m5!1s0x375054d458daac77%3A0x37c49920379b1fae!2sHotel%20Dallas%2C%20Jail%20Rd%2C%20Sylhet%203100!3m2!1d24.8955591!2d91.87438279999999!5e0!3m2!1sen!2sbd!4v1664895606666!5m2!1sen!2sbd" width="100%" height="300" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/pacific.avif"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title"> Hotel Star Pacific</h2>
+      <p>
+        4-Star Hotel in Sylhet with Restaurant / Avg. Price 7000-8000 BDT <br>
+        East Dargah Gate, Sylhet <br>
+        
+        <strong class="text-[#780C28]">5.3 kilometers</strong> <br>
+        WiFi / Restaurant / Swimming Pool / Parking/ Gym Fitness center / Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/searchresults.en-gb.html?aid=311984&label=star-pacific-sylhet1-JiB5l2Kmza0%2A7h7qTalp8QS594332270317%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-37232098607%3Alp9069470%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&gclid=CjwKCAiA74G9BhAEEiwA8kNfpQ0cKYmIZtsT0up1wkBapYP4ypoYEZGUvi1mB19xg4DzeSpRGjBWKBoCqK4QAvD_BwE&highlighted_hotels=7437202&redirected=1&city=900052126&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=d7f2f25e2495f1a986b44d66e5f6bdd4" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28954.261092704364!2d91.85263549409129!3d24.888339108807106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x3750552856acd63f%3A0x99ae707f372ece7f!2sHotel%20Star%20Pacific%2C%20982%2C%20East%20Dargah%20Gate%2C%20Sylhet!3m2!1d24.9017241!2d91.8687916!5e0!3m2!1sen!2sbd!4v1582384544581!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/nirvana1.webp"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Nirvana Inn</h2>
+      <p>
+        3-Star Hotel in Sylhet With Restaurant / Avg. Price 4000-5000 BDT <br>
+        Mirza Jangal Road, Sylhet <br>
+        <strong class="text-[#780C28]">2.6 kilometers</strong> <br>
+        WiFi / Restaurant / Swimming Pool / Parking/ Gym Fitness center / Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.nirvanainn.com/" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14477.482147641274!2d91.85861137092603!3d24.88533956014552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x3750552cd77aff43%3A0x77aa5c2368933e2d!2sNirvana%20Inn%2C%20Mirza%20Jangal%20Rd%2C%20Sylhet%203100!3m2!1d24.893463099999998!2d91.8637699!5e0!3m2!1sen!2sbd!4v1582382052420!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+      
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/Brithan.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Britannia Hotel</h2>
+      <p>
+        3 Star Hotel in Sylhet with Restaurant / Avg. Price 3000+ BDT <br>
+        Ambarkhana, Sylhet <br>
+        Reservation  +88(0)1919616151
+         <br>
+        <strong class="text-[#780C28]">3.8 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://britanniahotelsylhet.net/" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+      <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28953.978973504614!2d91.84985649409295!3d24.88954240839149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x37505527d8db6e9b%3A0xa800602f348aa226!2sBritannia%20Hotel%2C%20Ambarkhana%20Rd%2C%20Sylhet%203100!3m2!1d24.904508!2d91.869276!5e0!3m2!1sen!2sbd!4v1582383792167!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>  
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <span class="w-80 lg:w-full">
+        <img
+        src="assest/Hotels/panshi1.jpg"
+        alt="Hotel Rose" class=" lg:h-[500px]"/>
+      </span>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Panshi Inn</h2>
+      <p>
+        3-Star Hotel in Sylhet with Restaurant / Avg. Price 3000+ BDT <br>
+        North Jail Road, Sylhet <br>
+        Reservation  +88(0)1710809337<br>
+        <strong class="text-[#780C28]">2.7 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/hotel/bd/panshi-inn-sylhet-sylhet.html" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+     <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14477.34515962979!2d91.86571892092645!3d24.886508259952546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x375054d5a19e1f49%3A0xda9ce134d5ce66d6!2sPanshi%20Inn%2C%20W%20Tower%2C%20North%20Jail%20Rd%2C%20Sylhet%203100!3m2!1d24.895518499999998!2d91.87445!5e0!3m2!1sen!2sbd!4v1582435316041!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <span class="w-80 lg:w-full">
+        <img
+        src="assest/Hotels/fortune.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+      </span>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">
+        Hotel Fortune Garden</h2>
+      <p>3 Star Hotel in Sylhet with Restaurant / Avg. 3,000 BDT <br>
+        Naiorpul Point, Sylhet <br>
+        Reservation  +88(0)1705444111<br>
+        <strong class="text-[#780C28]">2.4 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.booking.com/hotel/bd/graver-inn.en-gb.html" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+     <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14477.362806536732!2d91.86927297092636!3d24.886357709977386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x375054d30bd207a1%3A0x869b9711441201aa!2sHotel%20Fortune%20Garden%2C%2029%2FA%2C%20Bongobir%20Road%2C%20Naiorpul%20Point%2C%20Sylhet%203100!3m2!1d24.8952174!2d91.8773746!5e0!3m2!1sen!2sbd!4v1582299957276!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+     
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <span class="w-80 lg:w-full">
+        <img
+        src="assest/Hotels/valley0.jpg"
+        alt="Hotel Rose" class=" lg:h-[480px]"/>
+      </span>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title">Hotel Valley Garden
+      </h2>
+      <p>3 Star Hotel in Sylhet with Restaurant / Avg. Price 3000+ BDT <br>
+        Subhanighat, Sylhet
+         <br>
+        <strong class="text-[#780C28]">1.7 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+      <div class="card-actions mt-5 justify-center">
+        <a href="https://www.hotelvalleygarden.com/" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+     <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7238.677842992981!2d91.87263293715772!3d24.886418457198186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3751ab2680ecae3d%3A0x7af4af225a0f47eb!2sHumayun%20Rashid%20Square%2C%20Sylhet!3m2!1d24.8775685!2d91.8754561!4m5!1s0x3751ab2d04b067db%3A0x35ee4a2043938758!2sHotel%20Valley%20Garden%2C%20Sylhet%20Tower%2CSobhanighat%2C%20Bishwa%20Rd%2C%20Sylhet%203100!3m2!1d24.890074499999997!2d91.8786004!5e0!3m2!1sen!2sbd!4v1582298013077!5m2!1sen!2sbd" width="100%" height="200" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+      
+    </div>
+  </div>
+</div>
+</div>
+<!------Add hotle ----
+<div class="hero min-h-[400px]">
+  <div class="hero-content">
+  <div class="card ml-5 rounded-none bg-white lg:card-side  shadow-lg">
+    <figure>
+      <img
+        src="assest/Hotels/"
+        alt="Hotel Rose" class="h-[250px] lg:h-[480px]"/>
+    </figure>
+    <div class="card-body w-80 lg:w-full">
+      <h2 class="card-title"></h2>
+      <p><br>
+         <br>
+        <strong class="text-[#780C28]">2.4 kilometers</strong> <br>
+        WiFi / Restaurant / Parking/ Conference Hall/ Banquet Hall
+      </p>
+     
+      <div class="card-actions mt-5 justify-center">
+        <a href="" class="btn bg-[#5B913B] text-[#131010]">Book Online</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+-->
+</main>
+<div
+  class="hero min-h-[400px]"
+  style="background-image: url(assest/Hotels/sylhet.jpg); background-size: cover;">
+  <div class="hero-overlay bg-opacity-40"></div>
+  <div class="hero-content text-neutral-content text-left flex-col lg:flex-row">
+    <div class="max-w-screen-md">
+      <h1 class="mb-5 text-5xl text-white font-bold"> Best Hotels</h1>
+      <p class="mb-5 text-white">
+        Starting from average 2,000 BDT per night.
+      </p>
+    </div>
+    <div class="max-w-md">
+      <div class="mb-4">
+        <div class="card bg-white rounded-none w-80 shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title text-4xl font-extrabold text-[#5B913B]">Family</h2>
+          <p class="text-xl text-[#77B254]" style=" text-transform: uppercase; font-weight: 400;">Friendly</p>
+        </div>
+      </div>
+    </div>
+      <div class="mb-4 ml-0 lg:ml-[21rem]">
+        <div class="mt-0 lg:-mt-[5rem]">
+          <div class="card bg-white rounded-none w-80 shadow-lg ">
+            <div class="card-body">
+              <h2 class="card-title text-4xl font-extrabold text-[#5B913B]">City Tour</h2>
+              <p class="text-xl text-[#77B254]" style=" text-transform: uppercase; font-weight: 400;">
+                Reach Easily</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-0 lg:-mt-20">
+        <div class="card bg-white rounded-none w-80 shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title text-4xl font-extrabold text-[#5B913B]">Transport</h2>
+            <p class="text-xl text-[#77B254]" style=" text-transform: uppercase; font-weight: 400;">Easy to hire</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="w-full mt-5 mb-14 lg:w-[1280px] m-auto">
+<div class="hero">
+  <div class="hero-content flex-col lg:flex-row">
+    <div class="flex">
+      <div class="card bg-white rounded-none w-40 shadow-lg lg:w-44">
+        <div class="card-body">
+          <div class="avatar">
+            <div class="w-24 rounded">
+              <img src="assest/Hotels/icon-map.png" />
+            </div>
+          </div>
+          <h2 class="card-title text-center">By Road</h2>
+        </div>
+      </div>
+      <div class="card bg-white rounded-none w-40 shadow-lg lg:w-44">
+        <div class="card-body">
+          <div class="avatar">
+            <div class="w-24 rounded">
+              <img src="assest/Hotels/icon-plane.png" />
+            </div>
+          </div>
+          <h2 class="card-title text-center">By Air</h2>
+        </div>
+      </div>
+    </div>
+    <div class=" flex">
+    <div class="card bg-white rounded-none w-40 shadow-lg lg:w-44">
+      <div class="card-body">
+        <div class="avatar">
+          <div class="w-24 rounded">
+            <img src="assest/Hotels/icon-train.png" />
+          </div>
+        </div>
+        <h2 class="card-title text-center">By Train</h2>
+      </div>
+    </div>
+    <div class="card bg-white rounded-none w-40 shadow-lg lg:w-44">
+      <div class="card-body">
+        <div class="avatar">
+          <div class="w-24 rounded">
+            <img src="assest/Hotels/icon-landmark.png" />
+          </div>
+        </div>
+        <h2 class="card-title text-center">Local Tour</h2>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</main>
+<div
+  class="hero mb-15 min-h-[400px]"
+  style="background-image: url(assest/Hotels/Sylhet_city.jpg); background-size: cover;">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-left">
+    <div class="max-w-screen-sm">
+      <h1 class="mb-5 text-2xl text-white font-bold items-center lg:text-4xl"><i class="las la-check text-2xl lg:text-5xl"></i>Find the perfect hotel in Sylhet
+      </h1>
+      <div class="breadcrumbs items-start ml-10 text-sm">
+        <ul class="flex-col text-xl text-[#fcfafb] lg:flex-row">
+          <li>WiFi</li>
+          <li>With Restaurant</li>
+          <li>Parking</li>
+          <li>Breakfast</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section class="bg-opacity-60 mt-10"   style="background-image: url(assest/Hotels/sylhet.jpg); background-size: cover;">
+    <div class="hero-overlay mt-5 bg-opacity-0 min-h-[100px]">
+      <div class="hero-content flex-col lg:flex-row m-5">
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Hotel Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">Travel Sylhet</h3>
+        </div>
+        <div class=" lg:ml-10">
+          <h3 class="text-2xl text-white font-extrabold lg:text-4xl">Online Resort Booking</h3>
+          <h3 class="text-xl ml-4 text-white font-bold lg:text-2xl">
+            32 BEST Hotels in Sylhet</h3>
+        </div>
+      </div>
+    </div>
+    <div
+    class="hero min-h-[400px]">
+    <div class="hero-overlay bg-opacity-0"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <main class="w-full lg:w-[1280px] mx-auto">
+        <footer class="footer bg-white text-base-content p-10">
+          <nav>
+              <a href=""><img class="w-[300px] h-[80px]" src="assest/image/Travel Logo.png" alt="" srcset=""></a>
+            <h1 class="text-[12px] text-[#5B913B] font-bold lg:text-2xl">Ultimate Sylhet Travel Guide</h1>
+            <h3 class="text-[12px] text-[#77B254] font-bold lg:text-2xl">Information on Tourist Places in Sylhet</h3>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">SYLHET</h6>
+            <a class="link link-hover text-xl text-black" href="bisnakandi.html"><i class="las la-angle-right"></i> Bisnakandi</a>
+            <a class="link link-hover text-xl text-black" href="ratargul.html"><i class="las la-angle-right"></i> Ratargul</a>
+            <a class="link link-hover text-xl text-black" href="bholaganj-sada-pathor.html"><i class="las la-angle-right"></i>Bholaganj</a>
+            <a class="link link-hover text-xl text-black" href="tea-gardens.html"><i class="las la-angle-right"></i> Tea Gardens</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">TOURIST</h6>
+            <a class="link link-hover text-xl text-black" href="jaflong.html"><i class="las la-angle-right"></i> Jaflong</a>
+            <a class="link link-hover text-xl text-black" href="lalakhal.html"><i class="las la-angle-right"></i> Lalakhal</a>
+            <a class="link link-hover text-xl text-black" href="shapla-bill.html"><i class="las la-angle-right"></i>Shapla Bill</a>
+            <a class="link link-hover text-xl text-black" href="park.html"><i class="las la-angle-right"></i>Khadimnagar</a>
+            <a class="link link-hover text-xl text-black" href="sylhet-city.html"><i class="las la-angle-right"></i>Sylhet City</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title text-[#80ee40] font-bold lg:text-2xl">ATTRACTION</h6>
+            <a class="link link-hover text-xl text-black" href="sreemangal.html"><i class="las la-angle-right"></i>Sreemangal</a>
+            <a class="link link-hover text-xl text-black" href="lawachara.html"><i class="las la-angle-right"></i>Lawachara</a>
+            <a class="link link-hover text-xl text-black" href="lake.html"><i class="las la-angle-right"></i>Madhabpur Lake</a>
+            <a class="link link-hover text-xl text-black" href="madhabkunda.html"><i class="las la-angle-right"></i>Madhabkunda</a>
+            <a class="link link-hover text-xl text-black" href="satrang.html"><i class="las la-angle-right"></i> Satrang Tea</a>
+          </nav>
+        </footer>
+        <footer class="footer bg-white text-base-content border-base-300 border-t px-10 py-4">
+          <aside class="grid-flow-col items-center">
+            <div class="avatar-content">
+              <div class="w-16 rounded-none lg:w-32">
+                <img src="assest/image/Travel Logo (180 x 80 px).png" class="w-40" />
+              </div>
+            </div>
+            <p class="text-[12px] text-black items-start lg:text-lg">
+              Places to Visit in Sylhet
+              <br />
+              Copyright @ SylhetTouristPlaces.com 2025
+            </p>
+          </aside>
+          <nav class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+              <a href="https://x.com/cholojai1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                </svg>
+              </a>
+              <a href="https://youtu.be/x0kF_mTWEgA?si=EnzW_-1P-SSyswSB">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/TourGroupSylhet">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </footer>
+      </main>
+    </div>
+  </div>
+   </section>      
+       <script src="assest/js/script.js"></script>
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </body>
+  </html>
